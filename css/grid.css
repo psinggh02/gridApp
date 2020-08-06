@@ -1,0 +1,200 @@
+.gridApp {
+  background: #EFEFEF;
+  padding: 20px;  
+}
+.gridContainer {
+  display: inline-block;
+  width: 100%;
+}
+
+.appTitle {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px: 
+}
+
+.box {
+  font-family: Arial;
+  text-align: center;
+  color: #FFFFFF;
+  width: 200px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.box:hover {
+    text-decoration : underline;   
+}
+.row {
+  display: inline-flex;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+}
+.grid {
+  float: left;
+  width: 50%;
+  display: contents;  
+}
+.gridActions {
+  float: right;
+}
+.gridActions button {
+  margin-left: 20px;
+  background: #72c3dc;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px #6F98A8;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  outline: none;
+}
+.gridActions button:focus {
+  background: #72c3dc;
+  padding: 14px 30px;  
+}
+.gridFooter {
+  margin-top: 20px;
+}
+@media screen and (min-width: 1480px) {
+  .grid {
+    width: 50%;
+    display: block;
+  }    
+}
+@media (min-width: 1280px) and (max-width: 1480px) {
+  .grid {
+    width: 70%;
+    display: block;
+  }  
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .box {
+    width: 200px;
+  }
+  .row {
+    height: 200px;
+    line-height: 200px;
+  }
+  .grid {
+    width: 75%;
+  }  
+}
+
+@media (min-width: 960px) and (max-width: 1024px) {
+  .box {
+    width: 150px;
+  }
+  .row {
+    height: 150px;
+    line-height: 150px;
+  }
+  .grid {
+    width: 70%;
+  }   
+}
+@media (min-width: 768px) and (max-width: 960px) {
+  .box {
+    width: 120px;
+  }
+  .row {
+    height: 120px;
+    line-height: 120px;
+  }
+  .grid {
+    width: 70%;
+  }  
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .box {
+    width: 90px;
+  }
+  .row {
+    height: 90px;
+    line-height: 90px;
+  }
+  .grid {
+    margin-top: 20px;
+    width: 70%;
+    display: block;
+  }
+  .gridActions {
+    float: left;
+  }
+  .gridActions button {
+    width: 175px;
+  }
+}
+@media (min-width: 376px) and (max-width: 480px) {
+  .box {
+    width: 60px;
+  }
+  .row {
+    height: 60px;
+    line-height: 60px;
+  }
+  .gridActions {
+    float: left;
+    margin-bottom: 20px;
+  }  
+  .gridActions button {
+    width: 130px;
+  }  
+}
+@media screen and (max-width: 376px){
+  .gridContainer {
+    background: #FFFFFF;
+    display: inline-grid;
+  }
+  .box {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    background: #EFEFEF !important;
+    color: #000000
+  }
+  .gridActions {
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 13%;
+    margin-top: 10px;
+  }
+  .row {
+    display: contents;
+    height: 50px;
+    line-height: 50px;
+  }
+  .grid {
+    width: 93%;
+    display: inline-table;   
+    padding: 10px; 
+  }
+  .boxContainer {
+    display: inline-flex;
+    width: 100%;
+  }
+  .boxBottom {
+    width: 273px;
+    height: 50px;
+    background: #EFEFEF;
+    margin-bottom: 10px;  
+  }
+  .appTitle {
+    color: white;
+  }
+  .gridApp {
+    background: #333333;
+  }
+  .gridFooter {
+    color: #FFFFFF
+  }
+  .boxContent {
+    width: 10px;
+    height: 50px;    
+  }
+}

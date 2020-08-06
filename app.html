@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid App</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <script src="src/gridApp.js"></script>
+    <script src="src/grid.js"></script>  
+  </head>
+
+  <body onload="initGridApp()">
+    <div class="gridApp">
+      <div class="appTitle">Shuffle and Sort</div>
+      <div class="gridContainer">
+        <div class="gridActions">
+          <button type="button" onclick="shuffleGrid()">Shuffle</button>        
+          <button type="button" onclick="sortGridOrder()">Sort</button>        
+        </div>        
+        <div id="gridBlock"></div>
+      </div>
+      <div class="gridFooter"><em>Shuffle and sort by Pankaj Singh</em></div>
+    </div>         
+  </body>
+
+</html>
